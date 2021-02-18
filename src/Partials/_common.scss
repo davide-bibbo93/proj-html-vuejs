@@ -9,11 +9,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h1, h2, h3 {
-  font-family: 'Abril Fatface', cursive;
-  color: $text-color;
-}
-
 ul {
   list-style: none;
 }
@@ -27,9 +22,24 @@ i {
   color: $text-color;
 }
 
+h1, h2, h3 {
+  font-family: 'Abril Fatface', cursive;
+  color: $text-color;
+  font-weight: 400;
+}
+
 h1 {
   font-size: 85px;
-  font-weight: 400;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: $color-hover;
 }
 
 .button {
