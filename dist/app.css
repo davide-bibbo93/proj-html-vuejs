@@ -8,6 +8,14 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+i {
+  color: #eae8e6;
+}
+
 h1, h2, h3 {
   font-family: "Abril Fatface", cursive;
 }
@@ -27,20 +35,51 @@ header .container {
 }
 header .container .header-top {
   height: 90px;
-  background-color: red;
+  display: flex;
+}
+header .container .header-top .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+}
+header .container .header-top .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+}
+header .container .header-top .right #list-icons li {
+  display: inline-block;
+}
+header .container .header-top .right #list-icons li a i {
+  vertical-align: middle;
+  margin: 15px;
+}
+header .container .header-top .right #list-icons li a i:hover {
+  transition: 1s linear;
+  color: #ae8652;
+}
+header .container .header-top .right #list-icons li a i.fa-shopping-cart {
+  font-size: 17px;
+}
+header .container .header-top .right #list-icons li a i.fa-bars {
+  font-size: 27px;
 }
 header .container .header-bottom {
-  display: flex;
   height: calc(100% - 90px);
+  display: flex;
   background-color: yellow;
 }
 header .container .header-bottom .left {
   width: 50%;
   height: 100%;
-  border: 1px solid #000;
 }
 header .container .header-bottom .right {
   width: 50%;
   height: 100%;
-  border: 1px solid #000;
 }

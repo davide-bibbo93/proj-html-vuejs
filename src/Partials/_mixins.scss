@@ -12,7 +12,14 @@
   margin: auto;
 }
 
-@mixin header-bottom-child {
+@mixin header-top-child {
   width: 50%;
   height: 100%;
+}
+
+@mixin display ($direction, $js, $ai) {
+  display: flex;
+  flex-direction: #{$direction};
+  justify-content: flex-#{$js};
+  align-items: flex-#{$ai};
 }

@@ -9,6 +9,14 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+i {
+  color: $icons-color;
+}
+
 h1, h2, h3 {
   font-family: 'Abril Fatface', cursive;
 }

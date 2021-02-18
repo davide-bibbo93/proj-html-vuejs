@@ -19,20 +19,34 @@
 
         <!-- inizio header-top -->
         <div class="header-top">
+
+          <!-- header-top sinistra con logo -->
           <div class="left">
-
+            <a href="#"><img :src="'img/' + logoImg.path" :alt="logoImg.name"></a>
           </div>
-          <div class="right">
 
+          <!-- header-top destra con carrello ed hamburger menu -->
+          <div class="right">
+            <ul id="list-icons">
+              <li v-for="icon in navIcons">
+                <a href="#">
+                  <i :class="icon.prefix + icon.type"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- end header-top -->
 
         <!-- inizio header-bottom -->
         <div class="header-bottom">
+
+          <!-- header-bottom sinistra con titolo e bottone -->
           <div class="left">
 
           </div>
+
+          <!-- header-bottom destra con immagine -->
           <div class="right">
 
           </div>
