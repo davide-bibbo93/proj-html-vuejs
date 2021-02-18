@@ -8,16 +8,49 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1, h2, h3 {
+  font-family: "Abril Fatface", cursive;
+  color: #eae8e6;
+}
+
 ul {
   list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
 }
 
 i {
   color: #eae8e6;
 }
 
-h1, h2, h3 {
-  font-family: "Abril Fatface", cursive;
+h1 {
+  font-size: 85px;
+  font-weight: 400;
+}
+
+.button {
+  color: #ae8652;
+  border: 2px #ae8652 solid;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.button:hover {
+  color: #65401e;
+  border-color: #65401e;
+  transition: 1s linear;
+}
+
+.square {
+  width: 65px;
+  height: 65px;
+  margin: 5px 0;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 header {
@@ -34,7 +67,7 @@ header .container {
   margin: auto;
 }
 header .container .header-top {
-  height: 90px;
+  height: 95px;
   display: flex;
 }
 header .container .header-top .left {
@@ -57,6 +90,7 @@ header .container .header-top .right #list-icons li {
   display: inline-block;
 }
 header .container .header-top .right #list-icons li a i {
+  z-index: 2;
   vertical-align: middle;
   margin: 15px;
 }
@@ -73,13 +107,64 @@ header .container .header-top .right #list-icons li a i.fa-bars {
 header .container .header-bottom {
   height: calc(100% - 90px);
   display: flex;
-  background-color: yellow;
 }
 header .container .header-bottom .left {
   width: 50%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .container .header-bottom .left .text hr {
+  width: 250px;
+  margin: 30px 0;
+  border: 2px solid #ae8652;
+}
+header .container .header-bottom .left .text p {
+  font-size: 24px;
+  color: #505050;
+}
+header .container .header-bottom .left .text a {
+  margin: 40px 0;
 }
 header .container .header-bottom .right {
   width: 50%;
   height: 100%;
+}
+header .container .header-bottom .right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+}
+header .square-contenitor {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  padding: 150px 0;
+}
+header .square-contenitor a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .square-contenitor a i {
+  color: #4f659a;
+  margin-bottom: 7px;
+  font-size: 26px;
+}
+header .square-contenitor a p {
+  color: #4f659a;
+  font-size: 12px;
+  font-weight: 700;
 }

@@ -43,17 +43,31 @@
 
           <!-- header-bottom sinistra con titolo e bottone -->
           <div class="left">
-
+            <div class="text">
+              <h1>Barber Shop</h1>
+              <hr>
+              <p>The Pinnacle of Male Grooming</p>
+              <a class="button" href="#">Learn more</a>
+            </div>
           </div>
 
           <!-- header-bottom destra con immagine -->
           <div class="right">
-
+            <img :src="'img/' + headerImg.path" :alt="headerImg.name">
           </div>
         </div>
         <!-- end header-bottom -->
 
       </div>
+
+      <!-- quadrati lato destro -->
+      <div class="square-contenitor">
+        <a v-for="item in squareItem" class="square" href="#">
+          <i :class="item.icon"></i>
+          <p>{{ item.text }}</p>
+        </a>
+      </div>
+      <!-- end quadrati -->
     </header>
     <!-- end header -->
 

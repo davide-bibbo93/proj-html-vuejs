@@ -9,14 +9,37 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1, h2, h3 {
+  font-family: 'Abril Fatface', cursive;
+  color: $text-color;
+}
+
 ul {
   list-style: none;
 }
 
-i {
-  color: $icons-color;
+a {
+  display: inline-block;
+  text-decoration: none;
 }
 
-h1, h2, h3 {
-  font-family: 'Abril Fatface', cursive;
+i {
+  color: $text-color;
+}
+
+h1 {
+  font-size: 85px;
+  font-weight: 400;
+}
+
+.button {
+  @include button ($color-hover);
+
+  &:hover {
+    @include button-hover($button-hover);
+  }
+}
+
+.square {
+  @include square;
 }
