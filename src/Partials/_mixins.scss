@@ -1,0 +1,18 @@
+//  Mixins Settings
+@mixin bg-size {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+@mixin header-container ($width){
+  width: $width;
+  height: 100%;
+  margin: auto;
+}
+
+@mixin header-bottom-child {
+  width: 50%;
+  height: 100%;
+}

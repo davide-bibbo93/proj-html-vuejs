@@ -1,0 +1,31 @@
+// Header Settings
+header {
+  height: 100vh;
+  background-image: url("../img/avadabarbers-homepage-hero-bg.jpg");
+  @include bg-size;
+
+  .container {
+    @include header-container($container-width);
+
+    .header-top {
+      height: $header-top-height;
+      background-color: red;
+    }
+
+    .header-bottom {
+      display: flex;
+      height: $header-bottom-height;
+      background-color: yellow;
+
+      .left {
+        @include header-bottom-child;
+        border: 1px solid #000;
+      }
+
+      .right {
+        @include header-bottom-child;
+        border: 1px solid #000;
+      }
+    }
+  }
+}
