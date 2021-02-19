@@ -363,6 +363,9 @@ footer .footer-top .container .column .content {
 footer .footer-top .container .column .content a {
   margin: 35px 0;
 }
+footer .footer-top .container .column .content .button {
+  font-size: 14px;
+}
 footer .footer-bottom {
   background-color: #191817;
   color: #353333;
