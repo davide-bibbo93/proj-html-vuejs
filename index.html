@@ -13,131 +13,154 @@
   </head>
   <body>
 
-    <!-- inizio header -->
-    <header>
-      <div class="container">
+    <!-- inizio contenitore totale -->
+    <div id="app">
 
-        <!-- inizio header-top -->
-        <div class="header-top">
-
-          <!-- header-top sinistra con logo -->
-          <div class="left">
-            <a href="#"><img :src="'img/' + logoImg.path" :alt="logoImg.name"></a>
-          </div>
-
-          <!-- header-top destra con carrello ed hamburger menu -->
-          <div class="right">
-            <ul id="list-icons">
-              <li v-for="icon in navIcons">
-                <a href="#">
-                  <i :class="icon.prefix + icon.type"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- end header-top -->
-
-        <!-- inizio header-bottom -->
-        <div class="header-bottom">
-
-          <!-- header-bottom sinistra con titolo e bottone -->
-          <div class="left">
-            <div class="text">
-              <h1>Barber Shop</h1>
-              <hr>
-              <p>The Pinnacle of Male Grooming</p>
-              <a class="button" href="#">Learn more</a>
-            </div>
-          </div>
-
-          <!-- header-bottom destra con immagine -->
-          <div class="right">
-            <img :src="'img/' + headerImg.path" :alt="headerImg.name">
-          </div>
-        </div>
-        <!-- end header-bottom -->
-
-      </div>
-
-      <!-- quadrati lato destro -->
-      <div class="square-contenitor">
-        <a v-for="item in squareItem" class="square" href="#">
-          <i :class="item.icon"></i>
-          <p>{{ item.text }}</p>
-        </a>
-      </div>
-      <!-- end quadrati -->
-    </header>
-    <!-- end header -->
-
-    <!-- inizio main -->
-    <main>
-      <!-- inizio sezione pro -->
-      <section id="pro">
-        <h4>award winning</h4>
-        <h2>Pro Barbers</h2>
-        <a class="button" href="#">Meet your new barber</a>
-      </section>
-      <!-- end sezione pro -->
-
-      <!-- inizio sezione servizi -->
-      <section id="services">
+      <!-- inizio header -->
+      <header>
         <div class="container">
 
-          <div class="text">
-            <h4>Mens grooming</h4>
-            <h2>Services</h2>
-          </div>
+          <!-- inizio header-top -->
+          <div class="header-top">
 
-          <div class="three-column">
-            <div v-for="column in Services" class="column">
-              <div class="content">
-                <img :src="'img/' + column.path" :alt="column.alt">
-                <h3>{{column.title}}</h3>
-                <p>{{column.paragraph}}</p>
-              </div>
+            <!-- header-top sinistra con logo -->
+            <div class="left">
+              <a href="#"><img :src="'img/' + logoImg.path" :alt="logoImg.name"></a>
+            </div>
+
+            <!-- header-top destra con carrello ed hamburger menu -->
+            <div class="right">
+              <ul id="list-icons">
+                <li v-for="icon in navIcons">
+                  <a href="#">
+                    <i :class="icon.prefix + icon.type"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+          <!-- end header-top -->
 
-          <div class="services-button">
-            <a class="button" href="#">Read about our services</a>
+          <!-- inizio header-bottom -->
+          <div class="header-bottom">
+
+            <!-- header-bottom sinistra con titolo e bottone -->
+            <div class="left">
+              <div class="text">
+                <h1>Barber Shop</h1>
+                <hr>
+                <p>The Pinnacle of Male Grooming</p>
+                <a class="button" href="#">Learn more</a>
+              </div>
+            </div>
+
+            <!-- header-bottom destra con immagine -->
+            <div class="right">
+              <img :src="'img/' + headerImg.path" :alt="headerImg.name">
+            </div>
+          </div>
+          <!-- end header-bottom -->
+
+        </div>
+
+        <!-- quadrati lato destro -->
+        <div class="square-contenitor">
+          <a v-for="item in squareItem" class="square" href="#">
+            <i :class="item.icon"></i>
+            <p>{{ item.text }}</p>
+          </a>
+        </div>
+        <!-- end quadrati -->
+      </header>
+      <!-- end header -->
+
+      <!-- inizio main -->
+      <main>
+        <!-- inizio sezione pro -->
+        <section id="pro">
+          <h4>award winning</h4>
+          <h2>Pro Barbers</h2>
+          <a class="button" href="#">Meet your new barber</a>
+        </section>
+        <!-- end sezione pro -->
+
+        <!-- inizio sezione servizi -->
+        <section id="services">
+          <div class="container">
+
+            <div class="text">
+              <h4>Mens grooming</h4>
+              <h2>Services</h2>
+            </div>
+
+            <div class="three-column">
+              <div v-for="column in Services" class="column">
+                <div class="content">
+                  <img :src="'img/' + column.path" :alt="column.alt">
+                  <h3>{{column.title}}</h3>
+                  <p>{{column.paragraph}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="services-button">
+              <a class="button" href="#">Read about our services</a>
+            </div>
+          </div>
+        </section>
+        <!-- end sezione servizi -->
+
+        <!-- inizio sezione prodotti -->
+        <section id="products">
+
+        </section>
+        <!-- end sezione prodotti -->
+
+        <!-- inzio sezione recensioni -->
+        <section id="reviews">
+
+        </section>
+        <!-- end sezione recensioni -->
+
+        <!-- inzio sezione blog -->
+        <section id="blog">
+
+        </section>
+        <!-- end sezione blog -->
+
+      </main>
+      <!-- end main -->
+
+      <!-- inizio footer -->
+      <footer>
+        <div class="footer-top">
+          <div class="container">
+
+            <div class="column">
+              <div class="content">
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content">
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content">
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
-      <!-- end sezione servizi -->
+        <div class="footer-bottom">
 
-      <!-- inizio sezione prodotti -->
-      <section id="products">
+        </div>
+      </footer>
+      <!-- end footer -->
 
-      </section>
-      <!-- end sezione prodotti -->
-
-      <!-- inzio sezione recensioni -->
-      <section id="reviews">
-
-      </section>
-      <!-- end sezione recensioni -->
-
-      <!-- inzio sezione blog -->
-      <section id="blog">
-
-      </section>
-      <!-- end sezione blog -->
-
-    </main>
-    <!-- end main -->
-
-    <!-- inizio footer -->
-    <footer>
-      <div class="footer-top">
-
-      </div>
-      <div class="footer-bottom">
-
-      </div>
-    </footer>
-    <!-- end footer -->
+    </div>
+    <!-- end contenitore totale -->
 
     <!-- Script -->
     <script src="js/script.js" charset="utf-8"></script>

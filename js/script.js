@@ -1,8 +1,6 @@
 // VueJs Settings
-
-// VueJs Header
-var header = new Vue({
-  el: "header",
+new Vue({
+  el: "#app",
 
   data: {
 
@@ -38,20 +36,7 @@ var header = new Vue({
         icon: "fas fa-shopping-cart",
         text: "On Sale"
       }
-    ]
-  },
-
-  methods: {
-
-
-  }
-});
-
-// VueJs Main
-var main = new Vue({
-  el: "main",
-
-  data: {
+    ],
 
     Services: [
       {

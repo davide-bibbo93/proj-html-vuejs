@@ -315,6 +315,27 @@ footer .footer-top {
   background-color: #111110;
   height: calc(600px - 100px);
 }
+footer .footer-top .container {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .footer-top .container .column {
+  background-color: red;
+  border: 1px solid green;
+  width: calc(100% / 3);
+  padding: 50px;
+}
+footer .footer-top .container .column .content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid blue;
+}
 footer .footer-bottom {
   background-color: #191817;
   height: 100px;
