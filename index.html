@@ -94,7 +94,7 @@
             </div>
 
             <div class="three-column">
-              <div v-for="column in Services" class="column">
+              <div v-for="column in services" class="column">
                 <div class="content">
                   <img :src="'img/' + column.path" :alt="column.alt">
                   <h3>{{column.title}}</h3>
@@ -133,29 +133,59 @@
 
       <!-- inizio footer -->
       <footer>
+
         <div class="footer-top">
           <div class="container">
 
             <div class="column">
               <div class="content">
+                <img src="img/avadabarbers_footer_shop_image-300x234.png"
+                alt="shop">
+                <a class="button" href="#">Shop our range now</a>
               </div>
             </div>
 
             <div class="column">
               <div class="content">
+
+                <a id="logo" href="#">
+                  <a href="#"><img :src="'img/' + logoImg.path" :alt="logoImg.name"></a>
+                </a>
+
+                <div class="company">
+                  <p v-for="data in company">{{data}}</p>
+                </div>
+                <h4>Follow us</h4>
+                
+                <ul id="social">
+                  <li v-for="site in social">
+                    <a href="#">
+                      <i :class="site.prefix + site.social"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div class="column">
               <div class="content">
+                <img src="img/avadabarbers_footer_appointment_image-300x234.png"
+                alt="appoint">
+                <a class="button" href="#">Book your appointment</a>
               </div>
             </div>
 
           </div>
         </div>
-        <div class="footer-bottom">
 
+        <div class="footer-bottom">
+          <p>
+            © Copyright 2012 - 2020 | Avada Theme by
+            <a href="#">ThemeFusion</a> | All Rights Reserved | Powered by
+            <a href="#">WordPress</a>
+          </p>
         </div>
+
       </footer>
       <!-- end footer -->
 
