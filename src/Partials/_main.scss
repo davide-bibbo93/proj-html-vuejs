@@ -1,6 +1,7 @@
 // Main Settings
 main {
   overflow-x: hidden;
+  margin-bottom: 600px;
 
   #pro {
     background-image: url("../img/avadabarbers-about-introbackground.jpg");
@@ -18,9 +19,10 @@ main {
     width: 100%;
     height: 100vh;
     position: relative;
+    background-color: #fff;
 
     &::before {
-      @include triangle;
+      @include triangle-up;
     }
 
     .container {
@@ -32,7 +34,8 @@ main {
       }
 
       .three-column {
-        @include display (row, flex-start, center);
+        @include display (row, flex-start, stretch);
+        flex-wrap: wrap;
 
         .column {
           padding: 50px;
@@ -67,15 +70,30 @@ main {
   }
 
   #products {
-    height: 100vh;
+    height: 1070px;
     background-image: url("../img/avadabarbers-reviewsbackground.jpg");
     @include bg-size;
     background-position: top;
     position: relative;
 
     &::before {
-      @include triangle;
+      @include triangle-up;
       border-bottom: 100px solid #121314;
     }
+  }
+
+  #reviews {
+    position: relative;
+    height: 1260px;
+    background-color: #ffffff;
+
+    &::after {
+      @include triangle-down;
+    }
+  }
+
+  #blog {
+    height: 1100px;
+    background-color: $blog-color;
   }
 }

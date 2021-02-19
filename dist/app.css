@@ -189,6 +189,7 @@ header .square-contenitor a p {
 
 main {
   overflow-x: hidden;
+  margin-bottom: 600px;
 }
 main #pro {
   background-image: url("../img/avadabarbers-about-introbackground.jpg");
@@ -210,6 +211,7 @@ main #services {
   width: 100%;
   height: 100vh;
   position: relative;
+  background-color: #fff;
 }
 main #services::before {
   position: absolute;
@@ -234,7 +236,8 @@ main #services .container .three-column {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 main #services .container .three-column .column {
   padding: 50px;
@@ -260,7 +263,7 @@ main #services .container .services-button {
   text-align: center;
 }
 main #products {
-  height: 100vh;
+  height: 1070px;
   background-image: url("../img/avadabarbers-reviewsbackground.jpg");
   background-size: cover;
   -webkit-background-size: cover;
@@ -279,4 +282,40 @@ main #products::before {
   border-bottom: 100px solid #fff;
   content: "";
   border-bottom: 100px solid #121314;
+}
+main #reviews {
+  position: relative;
+  height: 1260px;
+  background-color: #ffffff;
+}
+main #reviews::after {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translatex(-50%) rotate(180deg);
+  border-left: 950px solid transparent;
+  border-right: 950px solid transparent;
+  border-bottom: 100px solid #fff;
+  content: "";
+}
+main #blog {
+  height: 1100px;
+  background-color: #eae8e6;
+}
+
+footer {
+  width: 100%;
+  height: 600px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+footer .footer-top {
+  background-color: #111110;
+  height: calc(600px - 100px);
+}
+footer .footer-bottom {
+  background-color: #191817;
+  height: 100px;
 }

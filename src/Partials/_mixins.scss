@@ -48,7 +48,7 @@
 }
 
 
-@mixin triangle {
+@mixin triangle-up {
   position: absolute;
   top: -100px;
   left: 50%;
@@ -56,5 +56,16 @@
   border-left: 950px solid transparent;
   border-right: 950px solid transparent;
   border-bottom: 100px solid #fff;
-  content: '';
+  content: "";
+}
+
+@mixin triangle-down {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translatex(-50%) rotate(180deg);
+  border-left: 950px solid transparent;
+  border-right: 950px solid transparent;
+  border-bottom: 100px solid #fff;
+  content: "";
 }
