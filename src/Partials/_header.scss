@@ -6,7 +6,7 @@ header {
   background-position: top;
 
   .container {
-    @include header-container($container-width);
+    @include container($container-width);
 
     .header-top {
       height: $header-top-height;

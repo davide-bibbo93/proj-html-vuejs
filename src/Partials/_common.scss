@@ -24,22 +24,29 @@ i {
 
 h1, h2, h3 {
   font-family: 'Abril Fatface', cursive;
-  color: $text-color;
   font-weight: 400;
 }
 
 h1 {
+  color: $text-color;
   font-size: 85px;
 }
 
 h2 {
+  color: $text-color;
   font-size: 70px;
 }
 
+h3 {
+  color:  $h3-color;
+  font-size: 30px;
+}
+
 h4 {
-  text-transform: uppercase;
-  font-size: 17px;
   color: $color-hover;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .button {

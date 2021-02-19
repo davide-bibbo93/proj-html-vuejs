@@ -1,4 +1,6 @@
-// VueJs
+// VueJs Settings
+
+// VueJs Header
 var header = new Vue({
   el: "header",
 
@@ -21,10 +23,12 @@ var header = new Vue({
         active: false
       }
     ],
+
     headerImg: {
       name: "header img",
       path: "avadabarbers_hero_focalmirror-600x825.png"
     },
+
     squareItem: [
       {
         icon: "fas fa-desktop",
@@ -39,6 +43,41 @@ var header = new Vue({
 
   methods: {
 
+
+  }
+});
+
+// VueJs Main
+var main = new Vue({
+  el: "main",
+
+  data: {
+
+    Services: [
+      {
+        path: "avadabarbers-trimcut-icon-before.png",
+        alt: "trim",
+        title: "Trim & Cut",
+        paragraph: "Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking"
+      },
+      {
+        path: "avadabarbers-washndry-icon.png",
+        alt: "wash",
+        title: "Wash & Dry",
+        paragraph: "Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion."
+
+      },
+      {
+        path: "avadabarbers-beardtrim-icon.png",
+        alt: "beard",
+        title: "Beard Tidy",
+        paragraph: "Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers."
+
+      }
+    ],
+  },
+
+  methods: {
 
   }
 });

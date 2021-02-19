@@ -6,7 +6,7 @@
   -o-background-size: cover;
 }
 
-@mixin header-container ($width){
+@mixin container ($width){
   width: $width;
   height: 100%;
   margin: auto;

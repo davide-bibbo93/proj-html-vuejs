@@ -83,13 +83,33 @@
 
       <!-- inizio sezione servizi -->
       <section id="services">
+        <div class="container">
 
+          <div class="text">
+            <h4>Mens grooming</h4>
+            <h2>Services</h2>
+          </div>
+
+          <div class="three-column">
+            <div v-for="column in Services" class="column">
+              <div class="content">
+                <img :src="'img/' + column.path" :alt="column.alt">
+                <h3>{{column.title}}</h3>
+                <p>{{column.paragraph}}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-button">
+            <a class="button" href="#">Read about our services</a>
+          </div>
+        </div>
       </section>
       <!-- end sezione servizi -->
 
       <!-- inizio sezione prodotti -->
       <section id="products">
-        
+
       </section>
       <!-- end sezione prodotti -->
 

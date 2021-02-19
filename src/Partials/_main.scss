@@ -22,10 +22,60 @@ main {
     &::before {
       @include triangle;
     }
+
+    .container {
+      @include container($container-width);
+
+      .text {
+        text-align: center;
+        padding: 70px 0;
+      }
+
+      .three-column {
+        @include display (row, flex-start, center);
+
+        .column {
+          padding: 50px;
+          width: calc(100% / 3);
+
+          .content {
+            width: 100%;
+            text-align: center;
+
+            img {
+              height: 100px;
+            }
+
+            h3 {
+              margin: 20px 0;
+            }
+
+            p {
+              font-size: 18px;
+              font-weight: 300;
+              line-height: 30px;
+              color: $p-color;
+            }
+          }
+        }
+      }
+
+      .services-button {
+        text-align: center;
+      }
+    }
   }
 
   #products {
-    height: 500px;
-    background-color: green;
+    height: 100vh;
+    background-image: url("../img/avadabarbers-reviewsbackground.jpg");
+    @include bg-size;
+    background-position: top;
+    position: relative;
+
+    &::before {
+      @include triangle;
+      border-bottom: 100px solid #121314;
+    }
   }
 }
