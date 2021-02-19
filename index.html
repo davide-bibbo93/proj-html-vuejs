@@ -87,11 +87,8 @@
         <!-- inizio sezione servizi -->
         <section id="services">
           <div class="container">
-
-            <div class="text">
-              <h4>Mens grooming</h4>
-              <h2>Services</h2>
-            </div>
+            <h4>Mens grooming</h4>
+            <h2>Services</h2>
 
             <div class="three-column">
               <div v-for="column in services" class="column">
@@ -103,16 +100,29 @@
               </div>
             </div>
 
-            <div class="services-button">
-              <a class="button" href="#">Read about our services</a>
-            </div>
+            <a class="button" href="#">Read about our services</a>
           </div>
         </section>
         <!-- end sezione servizi -->
 
         <!-- inizio sezione prodotti -->
         <section id="products">
+          <h4>We have you covered</h4>
+          <h2>Avada Grooming Products</h2>
 
+          <div class="four-column">
+            <div v-for="product in products" class="column">
+              <div class="content">
+                <a href="#">
+                  <img :src="'img/' + product.img" :alt="product.name">
+                  <h3>{{ product.name }}</h3>
+                </a>
+                <p>{{ product.price }}</p>
+              </div>
+            </div>
+          </div>
+
+          <a class="button" href="#">Shop our product range</a>
         </section>
         <!-- end sezione prodotti -->
 
@@ -156,7 +166,7 @@
                   <p v-for="data in company">{{data}}</p>
                 </div>
                 <h4>Follow us</h4>
-                
+
                 <ul id="social">
                   <li v-for="site in social">
                     <a href="#">

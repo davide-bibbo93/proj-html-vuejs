@@ -1,0 +1,39 @@
+// Products Settings
+#products {
+  height: 1070px;
+  background-image: url("../img/avadabarbers-reviewsbackground.jpg");
+  @include bg-size;
+  background-position: top;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    @include triangle-up;
+    border-bottom: 100px solid #121314;
+  }
+
+  .four-column {
+    @include display (row, flex-start, center);
+
+    .column {
+      width: calc(100% / 4);
+      padding: 50px 100px;
+
+      .content {
+        @include display (column, flex-start, center);
+        width: 100%;
+
+        img {
+          width: 450px;
+        }
+
+        p {
+          color: $color-hover;
+          margin: 8px 0;
+          font-weight: 300;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

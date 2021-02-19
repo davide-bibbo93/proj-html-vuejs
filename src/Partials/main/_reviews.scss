@@ -1,0 +1,10 @@
+// Review Settings
+#reviews {
+  position: relative;
+  height: 1260px;
+  background-color: #ffffff;
+
+  &::after {
+    @include triangle-down;
+  }
+}

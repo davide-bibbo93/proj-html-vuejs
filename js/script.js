@@ -71,22 +71,48 @@ new Vue({
 
     social: [
       {
+        prefix: "fab ",
         social: "fa-facebook-f",
-        prefix: "fab ",
       },
       {
+        prefix: "fab ",
         social: "fa-twitter",
-        prefix: "fab ",
       },
       {
+        prefix: "fab ",
         social: "fa-youtube",
-        prefix: "fab ",
       },
       {
-        social: "fa-instagram",
         prefix: "fab ",
+        social: "fa-instagram",
       },
-    ]
+    ],
+
+    products: [
+      {
+        name: "Brush",
+        img: "brush_dark-800x800.png",
+        price: "$15.00"
+      },
+      {
+        name: "Scissors",
+        img: "scissors-600x600.png",
+        price: "$85.00"
+
+      },
+      {
+        name: "Hot oil",
+        img: "hot_oil_dark-400x400.png",
+        price: "$15.00"
+
+      },
+      {
+        name: "Straight Razor",
+        img: "straight_razor_dark-600x600.png",
+        price: "$30.00"
+
+      },
+    ],
   },
 
   methods: {
