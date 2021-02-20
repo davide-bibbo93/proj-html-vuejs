@@ -45,7 +45,7 @@
         <!-- inizio header-bottom -->
         <div class="header-bottom">
           <div class="container">
-            
+
             <!-- header-bottom sinistra con titolo e bottone -->
             <div class="left">
               <div class="text">
@@ -125,6 +125,23 @@
           </div>
 
           <a class="button" href="#">Shop our product range</a>
+
+          <!-- div prodotto del mese all'interno della sezione products -->
+          <div id="product-month">
+            <div class="left">
+              <img :src="'img/' + productMonth.img" :alt="productMonth.name">
+            </div>
+
+            <div class="right">
+              <div class="content">
+                <h4>This months featured product</h4>
+                <h2>{{productMonth.name}}</h2>
+                <p>{{productMonth.description}}</p>
+                <a class="button" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end div prodotto del mese -->
         </section>
         <!-- end sezione prodotti -->
 

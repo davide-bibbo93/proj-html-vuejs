@@ -36,4 +36,53 @@
       }
     }
   }
+
+  #product-month {
+    width: 60%;
+    height: 440px;
+    background-color: $bgFooterTopColor;
+    border-top: 3px solid $colorHover;
+    position: absolute;
+    bottom: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include display (row, flex-start, stretch);
+    z-index: 2;
+
+    .left {
+      width: 40%;
+      background-image: url("../img/avadabarbers-cta-background.jpg");
+      @include display(row, center, center);
+      @include bgSize;
+      background-position: center;
+    }
+
+    .right {
+      width: 60%;
+      position: relative;
+      text-align: left;
+
+      .content {
+        width: 76%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h2 {
+          margin: 5px 0 30px 0;
+        }
+
+        p {
+          color: $pColor;
+          font-weight: 300;
+          line-height: 18px;
+        }
+
+        a {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
 }
