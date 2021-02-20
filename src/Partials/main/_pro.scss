@@ -3,7 +3,7 @@
   background-image: url("../img/avadabarbers-about-introbackground.jpg");
   height: 550px;
   @include display (column, center, center);
-  @include bg-size;
+  @include bgSize;
   background-position: top;
 
   h2 {

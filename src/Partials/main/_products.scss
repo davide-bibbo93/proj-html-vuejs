@@ -2,13 +2,13 @@
 #products {
   height: 1070px;
   background-image: url("../img/avadabarbers-reviewsbackground.jpg");
-  @include bg-size;
+  @include bgSize;
   background-position: top;
   position: relative;
   text-align: center;
 
   &::before {
-    @include triangle-up;
+    @include triangleUp;
     border-bottom: 100px solid #121314;
   }
 
@@ -28,7 +28,7 @@
         }
 
         p {
-          color: $color-hover;
+          color: $colorHover;
           margin: 8px 0;
           font-weight: 300;
           font-size: 16px;

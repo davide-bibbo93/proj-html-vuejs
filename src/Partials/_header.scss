@@ -2,24 +2,24 @@
 header {
   height: 100vh;
   background-image: url("../img/avadabarbers-homepage-hero-bg.jpg");
-  @include bg-size;
+  @include bgSize;
   background-position: top;
 
   .container {
-    @include container($container-width);
+    @include container($containerWidth);
 
     .header-top {
-      height: $header-top-height;
+      height: $headerTopHeight;
       display: flex;
 
       .left {
         @include display (row, flex-start, flex-end);
-        @include header-top-child;
+        @include headerTopChild;
       }
 
       .right {
         @include display (row, flex-end, flex-end);
-        @include header-top-child;
+        @include headerTopChild;
 
         #list-icons {
 
@@ -31,11 +31,11 @@ header {
               i {
                 z-index: 2;
                 vertical-align: middle;
-                margin: $icons-margin;
+                margin: $iconsMargin;
 
                 &:hover {
                   transition: $transition;
-                  color: $color-hover;
+                  color: $colorHover;
                 }
               }
 
@@ -53,11 +53,11 @@ header {
     }
 
     .header-bottom {
-      height: $header-bottom-height;
+      height: $headerBottomHeight;
       display: flex;
 
       .left {
-        @include header-top-child;
+        @include headerTopChild;
         @include display (row, flex-start, center);
 
         .text {
@@ -65,7 +65,7 @@ header {
           hr {
             width: 250px;
             margin: 30px 0;
-            border: 2px solid $color-hover;
+            border: 2px solid $colorHover;
           }
 
           p {
@@ -80,7 +80,7 @@ header {
       }
 
       .right {
-        @include header-top-child;
+        @include headerTopChild;
 
         img {
           width: 100%;
@@ -106,13 +106,13 @@ header {
       @include display (column, center, center);
 
       i {
-        color: $square-color;
+        color: $squareColor;
         margin-bottom: 7px;
         font-size: 26px;
       }
 
       p {
-        color: $square-color;
+        color: $squareColor;
         font-size: 12px;
         font-weight: 700;
       }

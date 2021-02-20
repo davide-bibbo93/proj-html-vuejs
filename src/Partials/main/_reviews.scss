@@ -5,6 +5,6 @@
   background-color: #ffffff;
 
   &::after {
-    @include triangle-down;
+    @include triangleDown;
   }
 }

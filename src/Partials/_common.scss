@@ -10,11 +10,11 @@
   }
 
   &::-webkit-scrollbar-track {
-    background-color: $bg-footer-top-color;
+    background-color: $bgFooterTopColor;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $text-color;
+    background-color: $textColor;
     border-radius: 20px;
   }
 }
@@ -42,7 +42,7 @@ a {
 }
 
 i {
-  color: $text-color;
+  color: $textColor;
 }
 
 h1, h2, h3 {
@@ -51,32 +51,32 @@ h1, h2, h3 {
 }
 
 h1 {
-  color: $text-color;
+  color: $textColor;
   font-size: 85px;
 }
 
 h2 {
-  color: $text-color;
+  color: $textColor;
   font-size: 70px;
 }
 
 h3 {
-  color:  $h3-color;
+  color:  $h3Color;
   font-size: 30px;
 }
 
 h4 {
-  color: $color-hover;
+  color: $colorHover;
   font-size: 17px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .button {
-  @include button ($color-hover);
+  @include button ($colorHover);
 
   &:hover {
-    @include button-hover($button-hover);
+    @include buttonHover($buttonHover);
   }
 }
 
