@@ -5,12 +5,19 @@ header {
   @include bgSize;
   background-position: top;
 
-  .container {
-    @include container($containerWidth);
+  .header-top {
+    height: $headerTopHeight;
+    line-height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-    .header-top {
-      height: $headerTopHeight;
+    z-index: 2;
+
+    .container {
       display: flex;
+      @include container($containerWidth);
 
       .left {
         @include display (row, flex-start, flex-end);
@@ -20,6 +27,7 @@ header {
       .right {
         @include display (row, flex-end, flex-end);
         @include headerTopChild;
+        line-height: 95px;
 
         #list-icons {
 
@@ -51,10 +59,15 @@ header {
         }
       }
     }
+  }
 
-    .header-bottom {
-      height: $headerBottomHeight;
+  .header-bottom {
+    height: $headerBottomHeight;
+    padding-top: 120px;
+
+    .container {
       display: flex;
+      @include container($containerWidth);
 
       .left {
         @include headerTopChild;
@@ -89,7 +102,6 @@ header {
           object-position: top;
         }
       }
-
     }
   }
 

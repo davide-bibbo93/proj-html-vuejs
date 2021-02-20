@@ -18,10 +18,10 @@
 
       <!-- inizio header -->
       <header>
-        <div class="container">
 
-          <!-- inizio header-top -->
-          <div class="header-top">
+        <!-- inizio header-top -->
+        <div class="header-top">
+          <div class="container">
 
             <!-- header-top sinistra con logo -->
             <div class="left">
@@ -39,11 +39,13 @@
               </ul>
             </div>
           </div>
-          <!-- end header-top -->
+        </div>
+        <!-- end header-top -->
 
-          <!-- inizio header-bottom -->
-          <div class="header-bottom">
-
+        <!-- inizio header-bottom -->
+        <div class="header-bottom">
+          <div class="container">
+            
             <!-- header-bottom sinistra con titolo e bottone -->
             <div class="left">
               <div class="text">
@@ -58,10 +60,10 @@
             <div class="right">
               <img :src="'img/' + headerImg.path" :alt="headerImg.name">
             </div>
-          </div>
-          <!-- end header-bottom -->
 
+          </div>
         </div>
+        <!-- end header-bottom -->
 
         <!-- quadrati lato destro -->
         <div class="square-contenitor">
