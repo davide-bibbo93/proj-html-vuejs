@@ -36,7 +36,6 @@ header {
             a {
 
               i {
-                z-index: 2;
                 vertical-align: middle;
                 margin: $iconsMargin;
 
@@ -65,8 +64,8 @@ header {
     padding-top: 120px;
 
     .container {
-      display: flex;
       @include container($containerWidth);
+      @include display (row, flex-start, center);      
 
       .left {
         @include headerTopChild;

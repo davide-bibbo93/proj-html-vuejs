@@ -1,5 +1,51 @@
 // Blog Settings
 #blog {
-  height: 100vh;
   background-color: $blogColor;
+  height: 100%;
+  text-align: center;
+  padding: 180px 0 150px 0;
+
+  .container {
+    @include container($containerWidth);
+    @include display(row, center, stretch);
+    flex-wrap: wrap;
+
+    .column {
+      width: calc(100% / 3);
+      padding: 50px 15px;
+
+      .content {
+        width: 100%;
+        height: 100%;
+
+        .blog-img {
+          width: 100%;
+          height: 230px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            filter: blur(1px);
+
+            &:hover {
+              transform: scale(1.10);
+              transition: 0.7s ease-in-out;
+              filter: none;
+            }
+          }
+        }
+
+        h3 {
+          padding: 0 20px;
+        }
+
+        p {
+          color: $pColor;
+          line-height: 30px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
 }

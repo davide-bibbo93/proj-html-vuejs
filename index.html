@@ -165,6 +165,23 @@
 
         <!-- inzio sezione blog -->
         <section id="blog">
+          <h4>Tales from the barber shop</h4>
+          <h2>Recent Blog Posts</h2>
+          <div class="container">
+            <div v-for="blog in blogs" class="column">
+              <div class="content">
+                <a href="#">
+                  <div class="blog-img">
+                    <img :src="'img/' + blog.cover" :alt="blog.title">
+                  </div>
+                </a>
+                <h3>{{blog.title}}</h3>
+                <p>{{blog.content}}</p>
+              </div>
+            </div>
+          </div>
+
+          <a class="button" href="#">Read more from our blog</a>
 
         </section>
         <!-- end sezione blog -->

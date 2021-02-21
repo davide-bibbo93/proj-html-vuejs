@@ -137,6 +137,24 @@ new Vue({
         avatar: "avadabarbers-trimcut-gallery3-200x201.jpg",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu."
       },
+    ],
+
+    blogs: [
+      {
+        title: "Avada Barbers Now Open",
+        cover: "avadabarbers-second-blog-700x441.jpg",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper."
+      },
+      {
+        title: "Choosing The Right Barber",
+        cover: "avadabarbers-choosing-blog-700x441.jpg",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper."
+      },
+      {
+        title: "Quick Service Guide",
+        cover: "avadabarbers-ourservice-blog-700x441.jpg",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper."
+      }
     ]
   },
 
