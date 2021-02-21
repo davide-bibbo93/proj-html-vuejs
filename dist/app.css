@@ -68,6 +68,12 @@ h4 {
   text-transform: uppercase;
 }
 
+h5 {
+  color: #ae8652;
+  font-style: italic;
+  font-size: 17px;
+}
+
 .button {
   color: #ae8652;
   border: 2px #ae8652 solid;
@@ -388,9 +394,11 @@ header .square-contenitor a p {
 }
 
 #reviews {
-  position: relative;
-  height: 1260px;
   background-color: #ffffff;
+  height: 1260px;
+  position: relative;
+  text-align: center;
+  padding-top: calc(460px + 80px);
 }
 #reviews::after {
   position: absolute;
@@ -401,6 +409,30 @@ header .square-contenitor a p {
   border-right: 950px solid transparent;
   border-bottom: 100px solid #fff;
   content: "";
+}
+#reviews .container {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+#reviews .container .column {
+  width: calc(100% / 3);
+  padding: 60px;
+}
+#reviews .container .column .content p {
+  line-height: 30px;
+  color: #505050;
+  font-weight: 300;
+}
+#reviews .container .column .content img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 20px 0;
 }
 
 #blog {

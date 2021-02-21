@@ -147,7 +147,19 @@
 
         <!-- inzio sezione recensioni -->
         <section id="reviews">
-
+          <h4>What people say</h4>
+          <h2>Reviews</h2>
+          <div class="three-column">
+            <div class="container">
+              <div class="column" v-for="review in reviews">
+                <div class="content">
+                  <p>{{review.description}}</p>
+                  <img :src="'img/' + review.avatar" :alt="review.name">
+                  <h5>{{review.name}}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <!-- end sezione recensioni -->
 

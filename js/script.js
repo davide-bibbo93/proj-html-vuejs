@@ -118,7 +118,26 @@ new Vue({
       name: "Shaving Butter",
       img: "shaving_butter-400x400.png",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    }
+    },
+
+    reviews: [
+      {
+        name: "John Doe",
+        avatar: "avadabarbers-trimcut-gallery6-200x200.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu."
+      },
+      {
+        name: "Pete Jones",
+        avatar: "avadabarbers-trimcut-gallery7-200x201.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu."
+
+      },
+      {
+        name: "Mark Wilson",
+        avatar: "avadabarbers-trimcut-gallery3-200x201.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu."
+      },
+    ]
   },
 
   methods: {
