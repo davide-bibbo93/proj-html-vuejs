@@ -31,9 +31,10 @@
             <!-- header-top lato destro con carrello ed hamburger menu -->
             <div class="right">
               <ul id="list-icons">
-                <li v-for="icon in navIcons">
+                <li v-for="(icon, index) in navIcons">
                   <a href="#">
-                    <i :class="icon.prefix + icon.type"></i>
+                    <i :class="icon.active ? icon.closeClass : icon.class"
+                    @click="toogleActiveClass('navIcons', index)"></i>
                   </a>
                 </li>
               </ul>
@@ -73,6 +74,17 @@
           </a>
         </div>
         <!-- end quadrati -->
+
+        <!-- sezione hamburger menu al click -->
+        <div v-if="navIcons[1].active" class="hamb-layover">
+          <ul id="nav-list">
+            <li v-for="(link, index) in hambLayover.navHambLayover">
+              <a href="#">{{link.text}}</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end sezione hamburger menu al click -->
+
       </header>
       <!-- / HEADER -->
 

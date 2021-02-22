@@ -12,16 +12,49 @@ new Vue({
 
     navIcons: [
       {
-        prefix: "fas ",
-        type: "fa-shopping-cart",
+        class: "fas fa-shopping-cart",
+        closeClass: "fas fa-times",
         active: false
       },
       {
-        prefix: "fas ",
-        type: "fa-bars",
+        class: "fas fa-bars",
+        closeClass: "fas fa-times",
         active: false
       }
     ],
+
+    hambLayover: {
+      navHambLayover: [
+        {
+          text: "Home",
+          bg: "url('img/avadabarbers-homepage-hero-bg.jpg')"
+        },
+        {
+          text: "About Us",
+          bg: "url('img/about_bg.jpg')"
+        },
+        {
+          text: "Services",
+          bg: "url('img/services_bg.jpg')"
+        },
+        {
+          text: "Shop",
+          bg: "url('img/shop_bg.jpg')"
+        },
+        {
+          text: "Our Team",
+          bg: "url('img/team_bg.jpg')"
+        },
+        {
+          text: "Blog",
+          bg: "url('img/blog_bg.jpg')"
+        },
+        {
+          text: "Contact Us",
+          bg: "url('img/contact_bg.jpg')"
+        }
+      ]
+    },
 
     headerImg: {
       name: "header img",
@@ -168,6 +201,10 @@ new Vue({
 
   methods: {
 
-  }
+    // funzione per fare il menu al click
+    toogleActiveClass(navIcons, index) {
+      this.navIcons[index].active = !this.navIcons[index].active;
+    },
+  },
 });
 Vue.config.devtools = true;
