@@ -13,22 +13,22 @@
   </head>
   <body>
 
-    <!-- inizio contenitore totale -->
+    <!-- CONTENITORE APP -->
     <div id="app">
 
-      <!-- inizio header -->
+      <!-- HEADER -->
       <header>
 
         <!-- inizio header-top -->
         <div class="header-top">
           <div class="container">
 
-            <!-- header-top sinistra con logo -->
+            <!-- header-top lato sinistro con logo -->
             <div class="left">
               <a href="#"><img :src="'img/' + logoImg.path" :alt="logoImg.name"></a>
             </div>
 
-            <!-- header-top destra con carrello ed hamburger menu -->
+            <!-- header-top lato destro con carrello ed hamburger menu -->
             <div class="right">
               <ul id="list-icons">
                 <li v-for="icon in navIcons">
@@ -46,7 +46,7 @@
         <div class="header-bottom">
           <div class="container">
 
-            <!-- header-bottom sinistra con titolo e bottone -->
+            <!-- header-bottom lato sinistro con titolo principale  e bottone -->
             <div class="left">
               <div class="text">
                 <h1>Barber Shop</h1>
@@ -56,7 +56,7 @@
               </div>
             </div>
 
-            <!-- header-bottom destra con immagine -->
+            <!-- header-bottom lato destro con immagine grande -->
             <div class="right">
               <img :src="'img/' + headerImg.path" :alt="headerImg.name">
             </div>
@@ -74,17 +74,18 @@
         </div>
         <!-- end quadrati -->
       </header>
-      <!-- end header -->
+      <!-- / HEADER -->
 
-      <!-- inizio main -->
+      <!-- MAIN -->
       <main>
-        <!-- inizio sezione pro -->
+
+        <!-- inizio sezione pro-barbers -->
         <section id="pro">
           <h4>award winning</h4>
           <h2>Pro Barbers</h2>
           <a class="button" href="#">Meet your new barber</a>
         </section>
-        <!-- end sezione pro -->
+        <!-- end sezione pro-barbers -->
 
         <!-- inizio sezione servizi -->
         <section id="services">
@@ -142,6 +143,7 @@
             </div>
           </div>
           <!-- end div prodotto del mese -->
+
         </section>
         <!-- end sezione prodotti -->
 
@@ -187,14 +189,16 @@
         <!-- end sezione blog -->
 
       </main>
-      <!-- end main -->
+      <!-- / MAIN -->
 
-      <!-- inizio footer -->
+      <!-- FOOTER -->
       <footer>
 
+        <!-- inizio footer-top -->
         <div class="footer-top">
           <div class="container">
 
+            <!-- prima colonna con img e bottone -->
             <div class="column">
               <div class="content">
                 <img src="img/avadabarbers_footer_shop_image-300x234.png"
@@ -203,6 +207,7 @@
               </div>
             </div>
 
+            <!-- seconda colonna con img, dati dell'azienda e social -->
             <div class="column">
               <div class="content">
 
@@ -225,6 +230,7 @@
               </div>
             </div>
 
+            <!-- terza colonna con img e bottone -->
             <div class="column">
               <div class="content">
                 <img src="img/avadabarbers_footer_appointment_image-300x234.png"
@@ -235,7 +241,9 @@
 
           </div>
         </div>
+        <!-- end footer-top -->
 
+        <!-- inizio footer-bottom con Copyright -->
         <div class="footer-bottom">
           <p>
             © Copyright 2012 - 2020 | Avada Theme by
@@ -243,14 +251,15 @@
             <a href="#">WordPress</a>
           </p>
         </div>
+        <!-- end footer-bottom -->
 
       </footer>
-      <!-- end footer -->
+      <!--/ FOOTER -->
 
     </div>
-    <!-- end contenitore totale -->
+    <!-- / CONTENITORE APP -->
 
-    <!-- Script -->
+    <!-- SCRIPT -->
     <script src="js/script.js" charset="utf-8"></script>
 
   </body>

@@ -4,6 +4,7 @@ new Vue({
 
   data: {
 
+    // header
     logoImg: {
       name: "logo",
       path: "avadabarbers-logo-x1.png"
@@ -38,6 +39,7 @@ new Vue({
       }
     ],
 
+    // sezione services
     services: [
       {
         path: "avadabarbers-trimcut-icon-before.png",
@@ -61,33 +63,8 @@ new Vue({
       }
     ],
 
-    company: [
-      "Avada Barbers",
-      "123 New York Street",
-      "New York City",
-      "info@yourwebsite.com",
-      "+1 (555) 555-1212",
-    ],
 
-    social: [
-      {
-        prefix: "fab ",
-        social: "fa-facebook-f",
-      },
-      {
-        prefix: "fab ",
-        social: "fa-twitter",
-      },
-      {
-        prefix: "fab ",
-        social: "fa-youtube",
-      },
-      {
-        prefix: "fab ",
-        social: "fa-instagram",
-      },
-    ],
-
+    // sezione products
     products: [
       {
         name: "Brush",
@@ -114,12 +91,14 @@ new Vue({
       },
     ],
 
+    // sezione productMonth
     productMonth: {
       name: "Shaving Butter",
       img: "shaving_butter-400x400.png",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
 
+    // sezione reviews
     reviews: [
       {
         name: "John Doe",
@@ -139,6 +118,7 @@ new Vue({
       },
     ],
 
+    // sezione blog
     blogs: [
       {
         title: "Avada Barbers Now Open",
@@ -155,7 +135,35 @@ new Vue({
         cover: "avadabarbers-ourservice-blog-700x441.jpg",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper."
       }
-    ]
+    ],
+
+    // footer
+    company: [
+      "Avada Barbers",
+      "123 New York Street",
+      "New York City",
+      "info@yourwebsite.com",
+      "+1 (555) 555-1212",
+    ],
+
+    social: [
+      {
+        prefix: "fab ",
+        social: "fa-facebook-f",
+      },
+      {
+        prefix: "fab ",
+        social: "fa-twitter",
+      },
+      {
+        prefix: "fab ",
+        social: "fa-youtube",
+      },
+      {
+        prefix: "fab ",
+        social: "fa-instagram",
+      },
+    ],
   },
 
   methods: {
