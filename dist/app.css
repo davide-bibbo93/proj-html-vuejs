@@ -57,7 +57,7 @@ h2 {
 }
 
 h3 {
-  color: #ae8d67;
+  color: #1a50ae;
   font-size: 30px;
 }
 
@@ -83,8 +83,8 @@ h5 {
   text-transform: uppercase;
 }
 .button:hover {
-  color: #65401e;
-  border-color: #65401e;
+  color: #4f659a;
+  border-color: #4f659a;
   transition: 0.2s linear;
 }
 
@@ -217,10 +217,20 @@ header .square-contenitor a {
   justify-content: center;
   align-items: center;
 }
-header .square-contenitor a i {
-  color: #4f659a;
-  margin-bottom: 7px;
+header .square-contenitor a:hover {
+  transform: scale(1.1);
+}
+header .square-contenitor a svg, header .square-contenitor a div {
+  margin-bottom: 4px;
   font-size: 26px;
+}
+header .square-contenitor a div {
+  color: #60c45a;
+  font-weight: 900;
+}
+header .square-contenitor a div span {
+  font-size: 18px;
+  vertical-align: top;
 }
 header .square-contenitor a p {
   color: #4f659a;
@@ -259,7 +269,7 @@ header .hamb-layover #nav-list li a:hover {
   color: #409ad3;
   transition: 0.2s linear;
   transform: scale(1.2);
-  border-bottom: 1px #65401e solid;
+  border-bottom: 1px #4f659a solid;
 }
 
 #pro {

@@ -61,17 +61,6 @@ new Vue({
       path: "avadabarbers_hero_focalmirror-600x825.png"
     },
 
-    squareItem: [
-      {
-        icon: "fas fa-desktop",
-        text: "Demos"
-      },
-      {
-        icon: "fas fa-shopping-cart",
-        text: "On Sale"
-      }
-    ],
-
     // sezione services
     services: [
       {
