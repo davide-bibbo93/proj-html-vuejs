@@ -197,8 +197,8 @@ new Vue({
 
     // funzione per cambiare il background img all'hover della lista nell'hamburger menu
     changeBg(index) {
-        this.hambLayover.activeBgIndex = index;
-      },
+      this.hambLayover.activeBgIndex = index;
+    },
   },
 });
 Vue.config.devtools = true;

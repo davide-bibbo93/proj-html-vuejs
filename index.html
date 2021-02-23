@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <link rel="stylesheet" href="dist/app.css">
     <title>Avada Barbers</title>
@@ -48,7 +49,7 @@
           <div class="container">
 
             <!-- header-bottom lato sinistro con titolo principale  e bottone -->
-            <div class="left">
+            <div class="left animate__animated animate__fadeInLeft animate__delay-1s">
               <div class="text">
                 <h1>Barber Shop</h1>
                 <hr>
@@ -58,7 +59,7 @@
             </div>
 
             <!-- header-bottom lato destro con immagine grande -->
-            <div class="right">
+            <div class="right animate__animated animate__fadeInRight animate__delay-2s">
               <img :src="'img/' + headerImg.path" :alt="headerImg.name">
             </div>
 
