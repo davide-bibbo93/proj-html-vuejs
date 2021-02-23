@@ -89,3 +89,13 @@ h5{
 .square {
   @include square;
 }
+
+.bg-fade-enter-active,
+ .bg-fade-leave-active {
+  transition: opacity 0.6s;
+}
+
+.bg-fade-enter,
+.bg-fade-leave-to {
+  opacity: 0;
+}

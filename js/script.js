@@ -24,7 +24,8 @@ new Vue({
     ],
 
     hambLayover: {
-      navHambLayover: [
+      activeBgIndex : 0,
+      navLinks: [
         {
           text: "Home",
           bg: "url('img/avadabarbers-homepage-hero-bg.jpg')"
@@ -84,7 +85,6 @@ new Vue({
 
       }
     ],
-
 
     // sezione products
     products: [
@@ -194,6 +194,11 @@ new Vue({
     toogleActiveClass(navIcons, index) {
       this.navIcons[index].active = !this.navIcons[index].active;
     },
+
+    // funzione per cambiare il background img all'hover della lista nell'hamburger menu
+    changeBg(index) {
+        this.hambLayover.activeBgIndex = index;
+      },
   },
 });
 Vue.config.devtools = true;

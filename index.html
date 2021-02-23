@@ -88,8 +88,18 @@
         <!-- sezione hamburger menu al click -->
         <div v-if="navIcons[1].active" class="hamb-layover">
           <ul id="nav-list">
-            <li v-for="(link, index) in hambLayover.navHambLayover">
-              <a href="#">{{link.text}}</a>
+            <li v-for="(link, index) in hambLayover.navLinks">
+              <a href="#" @mouseenter="changeBg(index)" @mouseleave="hambLayover.activeBgIndex = index">
+                {{link.text}}
+              </a>
+
+              <transition name="bg-fade">
+                <div
+                v-if="index === hambLayover.activeBgIndex"
+                class="bg-change"
+                :style="{backgroundImage: link.bg}">
+                </div>
+              </transition>
             </li>
           </ul>
         </div>
