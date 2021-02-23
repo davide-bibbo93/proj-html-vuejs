@@ -26,7 +26,10 @@
 
             <!-- header-top lato sinistro con logo -->
             <div class="left">
-              <a href="#"><img :src="'img/' + logoImg.path" :alt="logoImg.name"></a>
+              <a href="#">
+                <img :src="'img/' + logoImg.path" :alt="logoImg.name"
+                :class="scaleLogoHeader ? 'scale-logo' : 'no-scale-logo'">
+              </a>
             </div>
 
             <!-- header-top lato destro con carrello ed hamburger menu -->
@@ -152,8 +155,8 @@
                 <a href="#">
                   <img :src="'img/' + product.img" :alt="product.name">
                   <h3>{{ product.name }}</h3>
+                  <p>{{ product.price }}</p>
                 </a>
-                <p>{{ product.price }}</p>
               </div>
             </div>
           </div>

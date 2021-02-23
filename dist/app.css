@@ -97,6 +97,16 @@ h5 {
   border-radius: 10px;
 }
 
+.no-scale-logo {
+  transform: scale(1);
+  transition: 0.4s linear;
+}
+
+.scale-logo {
+  transform: scale(0.8);
+  transition: 0.4s linear;
+}
+
 .bg-fade-enter-active,
 .bg-fade-leave-active {
   transition: opacity 0.6s;
@@ -158,6 +168,7 @@ header .header-top .container .right #list-icons li a i {
 header .header-top .container .right #list-icons li a i:hover {
   transition: 0.2s linear;
   color: #409ad3;
+  transform: scale(1.15);
 }
 header .header-top .container .right #list-icons li a i.fa-shopping-cart {
   font-size: 17px;
@@ -229,7 +240,7 @@ header .square-contenitor a {
   align-items: center;
 }
 header .square-contenitor a:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 header .square-contenitor a svg, header .square-contenitor a div {
   margin-bottom: 4px;
@@ -279,7 +290,7 @@ header .hamb-layover #nav-list li a {
 header .hamb-layover #nav-list li a:hover {
   color: #409ad3;
   transition: 0.2s linear;
-  transform: scale(1.2);
+  transform: scale(1.15);
   border-bottom: 1px #4f659a solid;
 }
 header .hamb-layover .bg-change {
@@ -393,7 +404,7 @@ header .hamb-layover .bg-change {
 }
 #products .four-column .column {
   width: calc(100% / 4);
-  padding: 50px 100px;
+  padding: 50px 50px;
 }
 #products .four-column .column .content {
   display: flex;
@@ -401,6 +412,11 @@ header .hamb-layover .bg-change {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+}
+#products .four-column .column .content:hover {
+  box-shadow: 5px 5px 0 0;
+  padding: 0 200px;
+  color: rgba(0, 0, 0, 0.2);
 }
 #products .four-column .column .content img {
   width: 400px;
@@ -540,7 +556,7 @@ header .hamb-layover .bg-change {
   filter: blur(1px);
 }
 #blog .container .column .content .blog-img img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
   transition: 0.7s ease-in-out;
   filter: none;
 }
@@ -602,6 +618,7 @@ footer .footer-top .container .column:nth-child(2) #social li {
 footer .footer-top .container .column:nth-child(2) #social li i:hover {
   color: #409ad3;
   transition: 0.2s linear;
+  transform: scale(1.15);
 }
 footer .footer-top .container .column .content {
   width: 100%;
@@ -630,4 +647,5 @@ footer .footer-bottom a {
 footer .footer-bottom a:hover {
   color: #409ad3;
   transition: 0.2s linear;
+  transform: scale(1.2);
 }

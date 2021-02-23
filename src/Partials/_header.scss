@@ -42,6 +42,7 @@ header {
                 &:hover {
                   transition: $transition;
                   color: $colorHover;
+                  transform: $trasform;
                 }
               }
 
@@ -116,7 +117,7 @@ header {
       @include display (column, center, center);
 
       &:hover {
-        transform: scale(1.10);
+        transform: $trasform;
       }
 
       svg, div {
@@ -170,7 +171,7 @@ header {
           &:hover {
             color: $colorHover;
             transition: $transition;
-            transform: scale(1.2);
+            transform: $trasform;
             border-bottom: 1px $buttonHover solid;
           }
         }

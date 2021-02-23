@@ -91,6 +91,16 @@ h5{
   @include square;
 }
 
+.no-scale-logo {
+  transform: scale(1);
+  transition: 0.4s linear;
+}
+
+.scale-logo {
+  transform: scale(0.8);
+  transition: 0.4s linear;
+}
+
 .bg-fade-enter-active,
  .bg-fade-leave-active {
   transition: opacity 0.6s;

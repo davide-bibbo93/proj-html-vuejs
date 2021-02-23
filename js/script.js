@@ -4,6 +4,7 @@ new Vue({
 
   data: {
 
+    scaleLogoHeader: false,
     // header
     logoImg: {
       name: "logo",
@@ -200,5 +201,17 @@ new Vue({
       this.hambLayover.activeBgIndex = index;
     },
   },
+
+  mounted() {
+    // addEventListener messo nel mounted per fare ridurre il logo allo scroll in giù
+    window.addEventListener ('scroll' , () => {
+      if (window.scrollY > 2 && !this.navIcons[1].active) {
+        this.scaleLogoHeader = true;
+        // console.log(window.scrollY) // aumentano i numeri quando si scrolla
+      } else {
+        this.scaleLogoHeader = false;
+      }
+    })
+  }
 });
 Vue.config.devtools = true;
