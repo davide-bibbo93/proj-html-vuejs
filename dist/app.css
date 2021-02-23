@@ -404,7 +404,7 @@ header .hamb-layover .bg-change {
 }
 #products .four-column .column {
   width: calc(100% / 4);
-  padding: 50px 50px;
+  padding: 50px 20px;
 }
 #products .four-column .column .content {
   display: flex;
@@ -415,8 +415,9 @@ header .hamb-layover .bg-change {
 }
 #products .four-column .column .content:hover {
   box-shadow: 5px 5px 0 0;
-  padding: 0 200px;
-  color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
 }
 #products .four-column .column .content img {
   width: 400px;
