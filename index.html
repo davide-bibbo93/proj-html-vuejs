@@ -130,8 +130,9 @@
             <h2>Services</h2>
 
             <div class="three-column">
-              <div v-for="column in services" class="column">
-                <div class="content">
+              <div v-for="column in serviceSection.services" class="column"
+              :class="serviceSection.status ? 'animate__animated animate__backInUp':''">
+                <div class="content" v-if="serviceSection.status">
                   <img :src="'img/' + column.path" :alt="column.alt">
                   <h3>{{column.title}}</h3>
                   <p>{{column.paragraph}}</p>
@@ -150,8 +151,9 @@
           <h2>Avada Grooming Products</h2>
 
           <div class="four-column">
-            <div v-for="product in products" class="column">
-              <div class="content">
+            <div v-for="product in productSection.products" class="column"
+            :class="productSection.status ? 'animate__animated animate__backInUp':''">
+              <div class="content" v-if="productSection.status">
                 <a href="#">
                   <img :src="'img/' + product.img" :alt="product.name">
                   <h3>{{ product.name }}</h3>

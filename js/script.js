@@ -64,55 +64,61 @@ new Vue({
     },
 
     // sezione services
-    services: [
-      {
-        path: "avadabarbers-trimcut-icon-before.png",
-        alt: "trim",
-        title: "Trim & Cut",
-        paragraph: "Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking"
-      },
-      {
-        path: "avadabarbers-washndry-icon.png",
-        alt: "wash",
-        title: "Wash & Dry",
-        paragraph: "Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion."
+    serviceSection: {
+      status: false,
+      services: [
+        {
+          path: "avadabarbers-trimcut-icon-before.png",
+          alt: "trim",
+          title: "Trim & Cut",
+          paragraph: "Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking"
+        },
+        {
+          path: "avadabarbers-washndry-icon.png",
+          alt: "wash",
+          title: "Wash & Dry",
+          paragraph: "Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion."
 
-      },
-      {
-        path: "avadabarbers-beardtrim-icon.png",
-        alt: "beard",
-        title: "Beard Tidy",
-        paragraph: "Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers."
+        },
+        {
+          path: "avadabarbers-beardtrim-icon.png",
+          alt: "beard",
+          title: "Beard Tidy",
+          paragraph: "Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers."
 
-      }
-    ],
+        }
+      ],
+    },
 
     // sezione products
-    products: [
-      {
-        name: "Brush",
-        img: "brush_dark-800x800.png",
-        price: "$15.00"
-      },
-      {
-        name: "Scissors",
-        img: "scissors-600x600.png",
-        price: "$85.00"
+    productSection: {
+      status: false,
+      products: [
+        {
+          name: "Brush",
+          img: "brush_dark-800x800.png",
+          price: "$15.00"
+        },
+        {
+          name: "Scissors",
+          img: "scissors-600x600.png",
+          price: "$85.00"
 
-      },
-      {
-        name: "Hot oil",
-        img: "hot_oil_dark-400x400.png",
-        price: "$15.00"
+        },
+        {
+          name: "Hot oil",
+          img: "hot_oil_dark-400x400.png",
+          price: "$15.00"
 
-      },
-      {
-        name: "Straight Razor",
-        img: "straight_razor_dark-600x600.png",
-        price: "$30.00"
+        },
+        {
+          name: "Straight Razor",
+          img: "straight_razor_dark-600x600.png",
+          price: "$30.00"
 
-      },
-    ],
+        },
+      ],
+    },
 
     // sezione productMonth
     productMonth: {
@@ -200,9 +206,20 @@ new Vue({
     changeBg(index) {
       this.hambLayover.activeBgIndex = index;
     },
+
+    // funzione per tirare sù la sezione allo scroll giù
+    getSectionTop(sectionId) {
+      const section = document.getElementById(sectionId);
+      const allSection = section.getBoundingClientRect();
+      return allSection.top - 500;
+    }
   },
 
   mounted() {
+    //  stabilisco var const prendendo la funzione stabilita nei methods con argomento la sezione
+    const targetSection1 = this.getSectionTop("services");
+    const targetSection2 = this.getSectionTop("products");
+
     // addEventListener messo nel mounted per fare ridurre il logo allo scroll in giù
     window.addEventListener ('scroll' , () => {
       if (window.scrollY > 2 && !this.navIcons[1].active) {
@@ -210,6 +227,14 @@ new Vue({
         // console.log(window.scrollY) // aumentano i numeri quando si scrolla
       } else {
         this.scaleLogoHeader = false;
+      }
+
+      if (window.scrollY >= targetSection1) {
+        this.serviceSection.status = true;
+      }
+
+      if (window.scrollY >= targetSection2) {
+        this.productSection.status = true;
       }
     })
   }
