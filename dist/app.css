@@ -58,34 +58,34 @@ h2 {
 }
 
 h3 {
-  color: #1a50ae;
+  color: #ae8d67;
   font-size: 30px;
 }
 
 h4 {
-  color: #409ad3;
+  color: #ae8652;
   font-size: 17px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 h5 {
-  color: #409ad3;
+  color: #ae8652;
   font-style: italic;
   font-size: 17px;
 }
 
 .button {
-  color: #409ad3;
-  border: 2px #409ad3 solid;
+  color: #ae8652;
+  border: 2px #ae8652 solid;
   padding: 20px 40px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .button:hover {
-  color: #4f659a;
-  border-color: #4f659a;
+  color: #65401e;
+  border-color: #65401e;
   transition: 0.2s linear;
 }
 
@@ -167,7 +167,7 @@ header .header-top .container .right #list-icons li a i {
 }
 header .header-top .container .right #list-icons li a i:hover {
   transition: 0.2s linear;
-  color: #409ad3;
+  color: #ae8652;
   transform: scale(1.15);
 }
 header .header-top .container .right #list-icons li a i.fa-shopping-cart {
@@ -200,7 +200,7 @@ header .header-bottom .container .left {
 header .header-bottom .container .left .text hr {
   width: 250px;
   margin: 30px 0;
-  border: 2px solid #409ad3;
+  border: 2px solid #ae8652;
 }
 header .header-bottom .container .left .text p {
   font-size: 24px;
@@ -255,7 +255,7 @@ header .square-contenitor a div span {
   vertical-align: top;
 }
 header .square-contenitor a p {
-  color: #4f659a;
+  color: #65401e;
   font-size: 12px;
   font-weight: 700;
 }
@@ -288,10 +288,10 @@ header .hamb-layover #nav-list li a {
   text-align: right;
 }
 header .hamb-layover #nav-list li a:hover {
-  color: #409ad3;
+  color: #ae8652;
   transition: 0.2s linear;
   transform: scale(1.15);
-  border-bottom: 1px #4f659a solid;
+  border-bottom: 1px #65401e solid;
 }
 header .hamb-layover .bg-change {
   position: fixed;
@@ -423,7 +423,7 @@ header .hamb-layover .bg-change {
   width: 400px;
 }
 #products .four-column .column .content p {
-  color: #409ad3;
+  color: #ae8652;
   margin: 8px 0;
   font-weight: 300;
   font-size: 16px;
@@ -432,7 +432,7 @@ header .hamb-layover .bg-change {
   width: 60%;
   height: 440px;
   background-color: #111110;
-  border-top: 3px solid #409ad3;
+  border-top: 3px solid #ae8652;
   position: absolute;
   bottom: -400px;
   left: 50%;
@@ -617,7 +617,7 @@ footer .footer-top .container .column:nth-child(2) #social li {
   margin: 0 10px;
 }
 footer .footer-top .container .column:nth-child(2) #social li i:hover {
-  color: #409ad3;
+  color: #ae8652;
   transition: 0.2s linear;
   transform: scale(1.15);
 }
@@ -646,7 +646,7 @@ footer .footer-bottom a {
   color: #353333;
 }
 footer .footer-bottom a:hover {
-  color: #409ad3;
+  color: #ae8652;
   transition: 0.2s linear;
   transform: scale(1.2);
 }
